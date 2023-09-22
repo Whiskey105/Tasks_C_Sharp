@@ -12,9 +12,9 @@ secondNubmer = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber > secondNubmer)
 {
-    Console.WriteLine($"первое число = {firstNumber}; второе число = {secondNubmer} -> max = {firstNumber}; min = {secondNubmer}");
+    Console.WriteLine($"первое число = {firstNumber}; второе число = {secondNubmer}; -> max = {firstNumber}; min = {secondNubmer};");
 }
 else
 {
-    Console.WriteLine($"первое число = {firstNumber}; второе число = {secondNubmer} -> max = {secondNubmer}; min = {firstNumber}");
+    Console.WriteLine($"первое число = {firstNumber}; второе число = {secondNubmer}; -> max = {secondNubmer}; min = {firstNumber};");
 }
