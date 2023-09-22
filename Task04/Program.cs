@@ -14,8 +14,8 @@ thirdNumber = Convert.ToInt32(Console.ReadLine());
 
 int maxNumber = firstNumber;
 
-if(maxNumber < firstNumber) maxNumber = firstNumber;
-if(maxNumber < secondNubmer) maxNumber = secondNubmer;
-if(maxNumber < thirdNumber) maxNumber = thirdNumber;
+if (maxNumber < firstNumber) maxNumber = firstNumber;
+if (maxNumber < secondNubmer) maxNumber = secondNubmer;
+if (maxNumber < thirdNumber) maxNumber = thirdNumber;
 
 Console.WriteLine($"{firstNumber}; {secondNubmer}; {thirdNumber}; -> max = {maxNumber}");
