@@ -6,10 +6,10 @@ Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string result = $"{number} ->";
 
-for (int i = 2; i <= number; i+=2)
+for (int i = 2; i <= number; i += 2)
 {
     result += $" {i},";
 }
 
-result = result.Remove(result.Length - 1);
+result = result.Remove(result.Length - 1); // Удаление последней запятой
 Console.WriteLine(result);
