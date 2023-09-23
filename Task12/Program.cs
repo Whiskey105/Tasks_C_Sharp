@@ -37,7 +37,7 @@ else
 
 int remainder = GetDivisionRemainder(firstNumber, secondNubmer);
 
-if (GetDivisionRemainder == 0)
+if (remainder == 0)
 {
     Console.WriteLine($"{firstNumber}, {secondNubmer} -> кратно");
 }
