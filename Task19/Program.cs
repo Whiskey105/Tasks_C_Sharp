@@ -8,10 +8,10 @@ bool IsPalindrome(int num)
     int reversedNum = 0;
 
     while (buf > 0)
-    {   
+    {
         reversedNum *= 10;
         reversedNum += buf % 10;
-        buf /=10;
+        buf /= 10;
     }
 
     if (num == reversedNum)
@@ -25,6 +25,11 @@ bool IsPalindrome(int num)
 System.Console.WriteLine("Введите число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
+
+if (Math.Log10(number) != 4)
+{
+    Console.WriteLine("Число не пятизначное");
+}
 
 if (IsPalindrome(number))
 {
