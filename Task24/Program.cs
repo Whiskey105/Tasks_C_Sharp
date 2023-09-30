@@ -5,19 +5,30 @@
 4 -> 10
 8 -> 36 */
 
-int SumOfAllNumbers(int num)
+int SumNumbers(int num)
 {
     int sum = 0;
+
     for (int i = 1; i <= num; i++)
     {
-        sum += i;
+        checked
+        {
+            sum += i; // sum = sum + i
+        }
     }
+
     return sum;
 }
 
-
-System.Console.WriteLine("Введите целое положительное число: ");
+Console.WriteLine("Введите целое положительное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
-System.Console.WriteLine($"{number} -> {SumOfAllNumbers(number)}");
+if (number < 1)
+{
+    Console.WriteLine("Некорректный ввод!");
+    return;
+}
+
+int sumNumbers = SumNumbers(number);
+Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}");
 
