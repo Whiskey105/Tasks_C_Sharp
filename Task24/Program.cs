@@ -5,7 +5,7 @@
 4 -> 10
 8 -> 36 */
 
-int SumOfAllNumbers (int num)
+int SumOfAllNumbers(int num)
 {
     int sum = 0;
     for (int i = 1; i <= num; i++)
@@ -18,8 +18,6 @@ int SumOfAllNumbers (int num)
 
 System.Console.WriteLine("Введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
-
 
 System.Console.WriteLine($"{number} -> {SumOfAllNumbers(number)}");
 
