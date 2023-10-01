@@ -38,7 +38,7 @@ void InvertArray(int[] arr)
     }
 }
 
-int[] array = CreataArrayRndInt(12, -9, 9);
+int[] array = CreateArrayRndInt(12, -9, 9);
 
 Console.Write("[");
 PrintArray(array);
