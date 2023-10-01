@@ -28,4 +28,4 @@ int pow = Promt("Введите степень числа: ");
 
 int poweredNum = NumPow(number, pow);
 
-System.Console.WriteLine($"{number}, {pow} -> {poweredNum}");
+Console.WriteLine($"{number}, {pow} -> {poweredNum}");
