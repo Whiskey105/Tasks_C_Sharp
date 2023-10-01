@@ -4,7 +4,7 @@
 [-4, -8, 8, 2] -> [4, 8, -8, -2] */
 
 
-int[] CreataArrayRndInt(int size, int min, int max)
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
