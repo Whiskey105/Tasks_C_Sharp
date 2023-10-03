@@ -10,20 +10,20 @@ int[] ConverStringToIntArray(string numbers)
 
     for (int i = 0; i < intArray.Length; i++)
     {
-        bool success = int.TryParse(value, out number);
+        bool success = int.TryParse(stringArray[i], out buff);
         if (success)
         {
             intArray[i] = Convert.ToInt32(stringArray[i]);
         }
         else
         {
-            Console.WriteLine($"Попытка конфертации '{value ?? "<null>"}' failed.");
+            Console.WriteLine($"Попытка конвертации '{stringArray[i] ?? "<null>"}' провалена.");
         }
-        if (int.TryParse("Ошибка ввода!!!", out j))
+        if (int.TryParse("Ошибка ввода!!!", out buff))
         {
-            return new int { -1 };
+            return intArray;
         }
-        
+
     }
 
     return intArray;
