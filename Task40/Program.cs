@@ -26,4 +26,4 @@ int thirdSide = Promt("Введите длину третьей стороны: 
 
 bool result = IsTriangleExsits(firstSide, secondSide, thirdSide);
 
-System.Console.WriteLine(result ? "Треугольник существует!" : "Треугольник не существует!");
+Console.WriteLine(result ? "Треугольник существует!" : "Треугольник не существует!");
