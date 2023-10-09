@@ -33,7 +33,7 @@ void PrintArray(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matrix[i, j]} ");
+            Console.Write($"{matrix[i, j]}\t");
         }
         Console.WriteLine();
     }
@@ -41,21 +41,21 @@ void PrintArray(int[,] matrix)
 
 int[] FindNumberByPosition(int[,] matrix, int rowPosition, int columnPosition)
 {
-    bool res = 
-    if ((rowPosition < matrix.GetLength(0) && rowPosition > 0) && (columnPosition < matrix.GetLength(1) && columnPosition > 0))
+    bool res = rowPosition <= matrix.GetLength(0) && rowPosition > 0 && columnPosition <= matrix.GetLength(1) && columnPosition > 0;
+    if (res)
     {
-        int[] results = new int[2] {matrix[rowPosition, columnPosition], 0};
+        int[] results = new int[2] { matrix[rowPosition - 1, columnPosition - 1], 0 };
         return results;
     }
     else
     {
-        int[] results = new int[1] {0};
+        int[] results = new int[1] { 0 };
         return results;
     }
-    
+
 }
 
-void PrintCheckIfError(int[] results, int X, int X)
+void PrintCheckIfError(int[] results, int X, int Y)
 {
     if (results.Length != 2)
     {
@@ -63,7 +63,7 @@ void PrintCheckIfError(int[] results, int X, int X)
     }
     else
     {
-        Console.WriteLine($"The number in [{X}, {X}] is {results[0]}");
+        Console.WriteLine($"The number in [{X}, {Y}] is {results[0]}");
     }
 }
 
@@ -71,4 +71,4 @@ int[,] arr2d = CreateIncreasingMatrix(4, 4, 5);
 
 PrintArray(arr2d);
 
-PrintCheckIfError(FindNumberByPosition(arr2d, 4, 2), 4, 2);
+PrintCheckIfError(FindNumberByPosition(arr2d, 3, 2), 3, 2);
