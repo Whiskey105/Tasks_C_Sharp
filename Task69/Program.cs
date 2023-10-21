@@ -17,4 +17,4 @@ int P = Convert.ToInt32(Console.ReadLine());
 
 int powerOfNumber = PowerOfNumber(N, P);
 
-Console.WriteLine($"{N} -> {powerOfNumber}");
+Console.WriteLine($"N = {N}; P = {P} -> {powerOfNumber}");
