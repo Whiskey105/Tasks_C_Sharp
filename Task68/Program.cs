@@ -21,10 +21,10 @@ int AckermannFunction(int numN, int numM)
     }
 }
 
-Console.Write("Введите натуральное число M: ");
+Console.Write("Введите целое положительное число M: ");
 int M = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите натуральное число N: ");
+Console.Write("Введите целое положительное число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 if (N < 0 || M < 0)
